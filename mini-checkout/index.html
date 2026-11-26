@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5efdf" />
+  <title>Retro Pantry — Good things for your table</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-bag" viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.8 8.8 0 0 1 9.8 3.5 8.9 8.9 0 1 0 20.5 14.2Z"/></symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="icon-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3m3 0-1 13H7L6 7m3 3v7m6-7v7"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="icon-sparkle" viewBox="0 0 24 24"><path d="m12 2 1.8 7.2L21 12l-7.2 2.8L12 22l-1.8-7.2L3 12l7.2-2.8L12 2Z"/></symbol>
+  </svg>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Retro Pantry home">
+      <span class="brand-stamp" aria-hidden="true">RP</span>
+      <span>retro <b>pantry</b><small>GOOD THINGS, GATHERED</small></span>
+    </a>
+    <div class="header-actions">
+      <span class="handwritten-note">A little old-fashioned. A lot delicious.</span>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch colour theme">
+        <svg class="icon sun-icon" aria-hidden="true"><use href="#icon-sun"/></svg>
+        <svg class="icon moon-icon" aria-hidden="true"><use href="#icon-moon"/></svg>
+      </button>
+      <a class="header-bag" href="#order-summary" aria-label="Jump to your basket"><svg class="icon"><use href="#icon-bag"/></svg><span>YOUR BASKET</span></a>
+    </div>
+  </header>
+
+  <main id="top" class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><svg class="icon"><use href="#icon-sparkle"/></svg> SMALL-BATCH PANTRY FINDS</p>
+        <h1>Bring home<br><em>the good stuff.</em></h1>
+        <p class="hero-description">Thoughtful treats and everyday staples, picked to make the ordinary feel special.</p>
+        <div class="hero-perks"><span>✳ Made for sharing</span><span>✳ Packed with care</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a pantry shelf with jars and a loaf of bread" role="img">
+        <div class="sun-disc"></div><div class="shelf-jar jar-one"></div><div class="shelf-jar jar-two"></div><div class="bread-loaf"></div><div class="hero-leaf leaf-one">✳</div><div class="hero-leaf leaf-two">✿</div>
+        <span class="hero-art-caption">THE PANTRY EDIT · NO. 04</span>
+      </div>
+    </section>
+
+    <div class="content-grid">
+      <section class="shop-section" aria-labelledby="products-heading">
+        <div class="section-title-row">
+          <div><p class="eyebrow">THE SHELVES ARE STOCKED</p><h2 id="products-heading">A few pantry favourites</h2></div>
+          <span id="catalog-count" class="catalog-count">04 FINDS</span>
+        </div>
+        <div class="product-grid">
+          <article class="product-card" style="--card-delay: 0ms">
+            <div class="product-image image-bread" role="img" aria-label="Illustration of a golden sourdough loaf"><span class="image-badge">BAKERY</span><svg viewBox="0 0 180 130" aria-hidden="true"><ellipse cx="90" cy="108" rx="67" ry="10" fill="#9b6c48" opacity=".18"/><path d="M28 87c0-34 25-57 62-57s62 23 62 57c0 13-27 20-62 20S28 100 28 87Z" fill="#c98243"/><path d="M37 76c7-22 25-34 52-35-7 9-10 19-10 31 0 8-7 14-15 13-9-1-18-4-27-9Z" fill="#e6b36f"/><path d="M85 42c12-7 28-7 42-1-11 6-19 17-22 30-2 8-12 11-19 6-7-5-9-13-6-21 1-5 3-10 5-14Z" fill="#eab875"/><path d="m65 54 13 25m12-35 12 28m13-24 10 20" stroke="#f7dfb4" stroke-width="6" stroke-linecap="round"/></svg></div>
+            <div class="product-details"><p class="product-kicker">SLOW FERMENTED</p><h3>Sunday Sourdough</h3><p class="product-description">Golden crust · Country loaf</p><div class="product-buy"><strong>₹ 180.00</strong><button class="add-button" data-add="sourdough"><svg class="icon"><use href="#icon-plus"/></svg><span>Add</span></button></div></div>
+          </article>
+          <article class="product-card" style="--card-delay: 90ms">
+            <div class="product-image image-jam" role="img" aria-label="Illustration of a strawberry jam jar"><span class="image-badge">SMALL BATCH</span><svg viewBox="0 0 180 130" aria-hidden="true"><ellipse cx="90" cy="110" rx="48" ry="8" fill="#83443c" opacity=".15"/><path d="M56 34h68l7 17v47c0 8-7 13-15 13H64c-8 0-15-5-15-13V51l7-17Z" fill="#d66e61"/><path d="M56 34h68l7 17H49l7-17Z" fill="#f2b5a0"/><rect x="57" y="22" width="66" height="17" rx="5" fill="#e5c47f"/><rect x="59" y="60" width="62" height="35" rx="7" fill="#fff1d9"/><path d="M90 67c-7-10-21-2-12 9l12 11 12-11c9-11-5-19-12-9Z" fill="#c84f4f"/><path d="m90 66 3-7" stroke="#63835d" stroke-width="3" stroke-linecap="round"/></svg></div>
+            <div class="product-details"><p class="product-kicker">FRUIT & SUNSHINE</p><h3>Strawberry Jam</h3><p class="product-description">Bright berries · 220 g jar</p><div class="product-buy"><strong>₹ 240.00</strong><button class="add-button" data-add="jam"><svg class="icon"><use href="#icon-plus"/></svg><span>Add</span></button></div></div>
+          </article>
+          <article class="product-card" style="--card-delay: 180ms">
+            <div class="product-image image-oil" role="img" aria-label="Illustration of a green olive oil bottle"><span class="image-badge">KITCHEN HERO</span><svg viewBox="0 0 180 130" aria-hidden="true"><ellipse cx="90" cy="111" rx="39" ry="8" fill="#415b3c" opacity=".16"/><path d="M78 17h24v19l11 13v49c0 8-6 13-14 13H81c-8 0-14-5-14-13V49l11-13V17Z" fill="#758b58"/><path d="M78 17h24v19H78Z" fill="#d2b56f"/><rect x="80" y="9" width="20" height="12" rx="3" fill="#a47c43"/><path d="M69 58h42v39c0 8-6 13-14 13H83c-8 0-14-5-14-13V58Z" fill="#536f48"/><rect x="73" y="64" width="34" height="29" rx="4" fill="#f1e5c6"/><path d="M90 70c-7 7-8 12 0 17 8-5 7-10 0-17Z" fill="#8ca45e"/><path d="M85 84c4-5 6-9 5-14" stroke="#f6f0dc" stroke-width="1.5" fill="none"/></svg></div>
+            <div class="product-details"><p class="product-kicker">COLD PRESSED</p><h3>Olive Grove Oil</h3><p class="product-description">Peppery finish · 250 ml</p><div class="product-buy"><strong>₹ 420.00</strong><button class="add-button" data-add="olive-oil"><svg class="icon"><use href="#icon-plus"/></svg><span>Add</span></button></div></div>
+          </article>
+          <article class="product-card" style="--card-delay: 270ms">
+            <div class="product-image image-herbs" role="img" aria-label="Illustration of a herb seasoning tin"><span class="image-badge">GARDEN PICK</span><svg viewBox="0 0 180 130" aria-hidden="true"><ellipse cx="90" cy="108" rx="43" ry="8" fill="#415b3c" opacity=".15"/><rect x="53" y="34" width="74" height="70" rx="12" fill="#d8b66f"/><rect x="51" y="27" width="78" height="15" rx="5" fill="#a77a4d"/><rect x="60" y="53" width="60" height="39" rx="6" fill="#f5edda"/><path d="M90 83V62m0 12c-12-1-16-8-15-15 9 1 15 6 15 15Zm0-5c11-2 15-9 14-15-9 2-14 7-14 15Z" fill="#64825a"/><circle cx="70" cy="35" r="2" fill="#ead8a8"/><circle cx="81" cy="35" r="2" fill="#ead8a8"/><circle cx="92" cy="35" r="2" fill="#ead8a8"/><circle cx="103" cy="35" r="2" fill="#ead8a8"/><circle cx="114" cy="35" r="2" fill="#ead8a8"/></svg></div>
+            <div class="product-details"><p class="product-kicker">AROMATIC & LOVELY</p><h3>Garden Herb Mix</h3><p class="product-description">A little savoury magic · 45 g</p><div class="product-buy"><strong>₹ 160.00</strong><button class="add-button" data-add="herbs"><svg class="icon"><use href="#icon-plus"/></svg><span>Add</span></button></div></div>
+          </article>
+        </div>
+        <div class="shelf-note"><span>✳</span><p><b>A note from our pantry:</b> Good food tastes even better when shared. Thanks for shopping small.</p></div>
+      </section>
+
+      <aside id="order-summary" class="summary-card" aria-labelledby="summary-heading">
+        <div class="summary-heading"><div><p class="eyebrow">YOUR LITTLE HAUL</p><h2 id="summary-heading">The basket</h2></div><span class="basket-stamp"><svg class="icon"><use href="#icon-bag"/></svg></span></div>
+        <div id="cart-items" class="cart-items" aria-live="polite"><div class="empty-cart"><span>♡</span><p>Your basket is taking a nap</p><small>Add a pantry favourite to wake it up.</small></div></div>
+        <div class="delivery-card"><div class="delivery-icon"><svg class="icon"><use href="#icon-pin"/></svg></div><div><span class="delivery-label">DELIVERING TO</span><strong>Retro Pantry · 24 Pantry Lane</strong><small>Coimbatore, Tamil Nadu 641001</small></div><span class="fixed-tag">FIXED</span></div>
+        <div class="totals"><div><span>Subtotal</span><strong id="subtotal">₹ 0.00</strong></div><div><span>Delivery fee</span><strong id="delivery-fee">₹ 40.00</strong></div><div class="grand-total"><span>Total to pay</span><strong id="order-total">₹ 40.00</strong></div></div>
+        <form id="checkout-form" novalidate>
+          <label for="customer-name">Who are we packing for? <span>*</span></label>
+          <input id="customer-name" name="customerName" type="text" autocomplete="name" placeholder="Your lovely name" required />
+          <p class="field-hint">Just your name, so we can say hello.</p>
+          <p id="validation-message" class="message error" role="alert" hidden></p>
+          <button id="place-order" class="place-button" type="submit">Place my order <span>↗</span></button>
+        </form>
+        <div id="confirmation" class="confirmation" role="status" aria-live="polite" hidden>
+          <div class="success-icon"><svg class="icon"><use href="#icon-check"/></svg></div>
+          <p class="eyebrow">A LITTLE JOY IS ON ITS WAY</p>
+          <h3>Thank you for shopping with us!</h3>
+          <p id="confirmation-copy">Your pantry treats are all packed up.</p>
+          <div class="reference-box"><span>YOUR ORDER REFERENCE</span><strong id="order-reference"></strong></div>
+          <p class="confirmation-thanks">Made with care, just for you. ♡</p>
+        </div>
+        <p class="checkout-note"><span>✳</span> A simple, secure checkout. No payment is collected.</p>
+      </aside>
+    </div>
+    <footer><span>RETRO PANTRY <b>✳</b> GOOD THINGS, GATHERED</span><span>Thanks for keeping the good stuff going. ♡</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
